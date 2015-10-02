@@ -120,6 +120,7 @@
 	text-align: center;
 	padding-left: 50px;
 	padding-right: 50px;
+	font-family: 'Oswald', sans-serif;
 }
 .menuitem:hover{
 	background-color: #333333;
@@ -171,6 +172,13 @@
 	opacity: .2;
 	 -webkit-transition-duration: .5s;
 }
+.boxcallout{
+	font-weight: 600;
+	color: white;
+	background-color: black;
+
+}
+
 [ng-click],
 [data-ng-click],
 [x-ng-click] {

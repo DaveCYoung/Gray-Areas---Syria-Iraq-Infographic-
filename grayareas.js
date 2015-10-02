@@ -59,6 +59,10 @@ var SingleActor = function(header, UNqueryTerm, guardianQueryTerm){
 	this.header=header;
 	this.UNqueryTerm=UNqueryTerm;
 	this.guardianQueryTerm=guardianQueryTerm
+	this.horizontalcallout = false;
+	this.verticalcallout2 = false;
+	this.verticalcallout = false;
+	this.horizontalcallout2 = false;
 }
 // Object for Relationship
 var Relation = function (country1, country1UNQueryTerm, country1GuardianQueryTerm, country2, country2UNQueryTerm,  country2GuardianQueryTerm, score){
@@ -174,7 +178,29 @@ $scope.mouseLeave = function(){
 	for (i=0; i<$scope.relations.length;i++){
 		$scope.relations[i].border=false;
 	}
+	for (i=0; i<$scope.actors.length;i++){
+		$scope.actors[i].horizontalcallout=false;
+		$scope.actors[i].verticalcallout=false;
+		$scope.actors[i].horizontalcallout2=false;
+		$scope.actors[i].verticalcallout2=false;
+	}
 }
+$scope.relationshipMouseOver= function(relationship){
+	for (i=0; i<$scope.relations.length;i++){
+		if(relationship != i){
+			$scope.relations[i].border=true;
+		}
+	}
+	for(i=0;i<$scope.actors.length;i++){
+		if($scope.relations[relationship].country1 === $scope.actors[i].header){
+			$scope.actors[i].verticalcallout = true;
+		}
+		if($scope.relations[relationship].country2 === $scope.actors[i].header){
+			$scope.actors[i].horizontalcallout = true;
+		}
+	}
+}
+
 $scope.titleMouseOver=function(country){
 
 for (i=0; i<$scope.relations.length;i++){

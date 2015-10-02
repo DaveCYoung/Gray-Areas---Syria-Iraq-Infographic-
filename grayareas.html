@@ -25,8 +25,8 @@
 	</div>
 </div>
 	<div class = "menu">
-		<div class = "menuitem"> About Me</div>
-		<div class = "menuitem">  Contact </a></div>
+		<div class = "menuitem"> ABOUT ME</div>
+		<div class = "menuitem">  CONTACT </a></div>
 	</div>
 <br>
 <br>
@@ -50,34 +50,34 @@ Below is a graphical display of current relations between the primary actors in 
 		<div class = "col-sm-1 "><br>
 			
 		</div>
-		<div ng-mouseover = "titleMouseOver(actors[0].header)" ng-mouseleave = "mouseLeave()" class = "col-sm-1 key left"><br>
+		<div ng-class = "{boxcallout: actors[0].horizontalcallout}" ng-mouseover = "titleMouseOver(actors[0].header)" ng-mouseleave = "mouseLeave()" class = "col-sm-1 key left"><br>
 			{{actors[0].header}}
 		</div>
-		<div ng-mouseover = "titleMouseOver(actors[1].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key top"><br>
+		<div ng-class = "{boxcallout: actors[1].horizontalcallout}"ng-mouseover = "titleMouseOver(actors[1].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key top"><br>
 			{{actors[1].header}}
 		</div>
-		<div ng-mouseover = "titleMouseOver(actors[2].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key top"><br>
+		<div ng-class = "{boxcallout: actors[2].horizontalcallout}"ng-mouseover = "titleMouseOver(actors[2].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key top"><br>
 			{{actors[2].header}}
 		</div>
-		<div ng-mouseover = "titleMouseOver(actors[3].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key top"><br>
+		<div ng-class = "{boxcallout: actors[3].horizontalcallout}"ng-mouseover = "titleMouseOver(actors[3].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key top"><br>
 			{{actors[3].header}}
 		</div>
-		<div ng-mouseover = "titleMouseOver(actors[4].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key top"><br>
+		<div ng-class = "{boxcallout: actors[4].horizontalcallout}"ng-mouseover = "titleMouseOver(actors[4].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key top"><br>
 			{{actors[4].header}}
 		</div>
-		<div ng-mouseover = "titleMouseOver(actors[5].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key top"><br>
+		<div ng-class = "{boxcallout: actors[5].horizontalcallout}"ng-mouseover = "titleMouseOver(actors[5].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key top"><br>
 			{{actors[5].header}}
 		</div>
-		<div ng-mouseover = "titleMouseOver(actors[6].header)" ng-mouseleave = "mouseLeave()" class = "col-sm-1 key top"><br>
+		<div ng-class = "{boxcallout: actors[6].horizontalcallout}"ng-mouseover = "titleMouseOver(actors[6].header)" ng-mouseleave = "mouseLeave()" class = "col-sm-1 key top"><br>
 			{{actors[6].header}}
 		</div>
-		<div ng-mouseover = "titleMouseOver(actors[7].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key top"><br>
+		<div ng-class = "{boxcallout: actors[7].horizontalcallout}"ng-mouseover = "titleMouseOver(actors[7].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key top"><br>
 			{{actors[7].header}}
 		</div>
-		<div ng-mouseover = "titleMouseOver(actors[8].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key top"><br>
+		<div ng-class = "{boxcallout: actors[8].horizontalcallout}"ng-mouseover = "titleMouseOver(actors[8].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key top"><br>
 			{{actors[8].header}}
 		</div>
-		<div ng-mouseover = "titleMouseOver(actors[9].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key right"><br>
+		<div ng-class = "{boxcallout: actors[9].horizontalcallout}"ng-mouseover = "titleMouseOver(actors[9].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key right"><br>
 			{{actors[9].header}}
 		</div>
 		<div class = "col-sm-1 "><br>
@@ -85,36 +85,36 @@ Below is a graphical display of current relations between the primary actors in 
 	</div>
 
 		<div class = "row">
-		<div ng-mouseover = "titleMouseOver(actors[10].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key verticaltop">
+		<div ng-class = "{boxcallout: actors[10].verticalcallout}"ng-mouseover = "titleMouseOver(actors[10].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key verticaltop">
 			{{actors[10].header}}
 		</div>
-		<div ng-click = "click(0)" style = "background-color: {{relations[0].color}}" ng-class = "{boxborder: relations[0].border}" class = "col-sm-1">
+		<div ng-mouseover = "relationshipMouseOver(0)" ng-mouseleave = "mouseLeave()" ng-click = "click(0)" style = "background-color: {{relations[0].color}}" ng-class = "{boxborder: relations[0].border}" class = "col-sm-1">
 		</div>
-		<div   ng-click = "click(1)" style = "background-color: {{relations[1].color}}"class = "col-sm-1" ng-class = "{boxborder: relations[1].border}">
+		<div ng-mouseover = "relationshipMouseOver(1)" ng-mouseleave = "mouseLeave()" ng-click = "click(1)" style = "background-color: {{relations[1].color}}"class = "col-sm-1" ng-class = "{boxborder: relations[1].border}">
 			
 		</div>
-		<div   ng-click = "click(2)" style = "background-color: {{relations[2].color}}"class = "col-sm-1" ng-class = "{boxborder: relations[2].border}">
+		<div ng-mouseover = "relationshipMouseOver(2)" ng-mouseleave = "mouseLeave()" ng-click = "click(2)" style = "background-color: {{relations[2].color}}"class = "col-sm-1" ng-class = "{boxborder: relations[2].border}">
 			
 		</div>
-		<div  ng-click = "click(3)" style = "background-color: {{relations[3].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[3].border}">
+		<div ng-mouseover = "relationshipMouseOver(3)" ng-mouseleave = "mouseLeave()"  ng-click = "click(3)" style = "background-color: {{relations[3].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[3].border}">
 			
 		</div>
-		<div  ng-click = "click(4)"  style = "background-color: {{relations[4].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[4].border}">
+		<div ng-mouseover = "relationshipMouseOver(4)" ng-mouseleave = "mouseLeave()"  ng-click = "click(4)"  style = "background-color: {{relations[4].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[4].border}">
 			
 		</div>
-		<div  ng-click = "click(5)" style = "background-color: {{relations[5].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[5].border}">
+		<div ng-mouseover = "relationshipMouseOver(5)" ng-mouseleave = "mouseLeave()"  ng-click = "click(5)" style = "background-color: {{relations[5].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[5].border}">
 			
 		</div>
-		<div  ng-click = "click(6)" style = "background-color: {{relations[6].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[6].border}">
+		<div ng-mouseover = "relationshipMouseOver(6)" ng-mouseleave = "mouseLeave()"  ng-click = "click(6)" style = "background-color: {{relations[6].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[6].border}">
 			
 		</div>
-		<div  ng-click = "click(7)" style = "background-color: {{relations[7].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[7].border}">
+		<div ng-mouseover = "relationshipMouseOver(7)" ng-mouseleave = "mouseLeave()"  ng-click = "click(7)" style = "background-color: {{relations[7].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[7].border}">
 				
 		</div>
-		<div  ng-click = "click(8)" style = "background-color: {{relations[8].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[8].border}">
+		<div ng-mouseover = "relationshipMouseOver(8)" ng-mouseleave = "mouseLeave()"  ng-click = "click(8)" style = "background-color: {{relations[8].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[8].border}">
 			
 		</div>
-		<div ng-click= "click(9)" style = "background-color: {{relations[9].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[9].border}">
+		<div ng-mouseover = "relationshipMouseOver(9)" ng-mouseleave = "mouseLeave()" ng-click= "click(9)" style = "background-color: {{relations[9].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[9].border}">
 			
 		</div>
 		<div class = "col-sm-1">
@@ -122,34 +122,34 @@ Below is a graphical display of current relations between the primary actors in 
 	</div>
 
 	<div class = "row">
-		<div ng-mouseover = "titleMouseOver(actors[9].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key vertical"><br>
+		<div ng-class = "{boxcallout: actors[9].verticalcallout}"ng-mouseover = "titleMouseOver(actors[9].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key vertical"><br>
 			{{actors[9].header}}
 		</div>
-		<div  ng-click = "click(10)" style = "background-color: {{relations[10].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[10].border}">
+		<div  ng-mouseover = "relationshipMouseOver(10)" ng-mouseleave = "mouseLeave()" ng-click = "click(10)" style = "background-color: {{relations[10].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[10].border}">
 			
 		</div>
-		<div  ng-click = "click(11)" style = "background-color: {{relations[11].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[11].border}">
+		<div  ng-mouseover = "relationshipMouseOver(11)" ng-mouseleave = "mouseLeave()" ng-click = "click(11)" style = "background-color: {{relations[11].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[11].border}">
 			
 		</div>
-		<div  ng-click = "click(12)" style = "background-color: {{relations[12].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[12].border}">
+		<div  ng-mouseover = "relationshipMouseOver(12)" ng-mouseleave = "mouseLeave()" ng-click = "click(12)" style = "background-color: {{relations[12].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[12].border}">
 			
 		</div>
-		<div  ng-click = "click(13)" style = "background-color: {{relations[13].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[13].border}">
+		<div  ng-mouseover = "relationshipMouseOver(13)" ng-mouseleave = "mouseLeave()" ng-click = "click(13)" style = "background-color: {{relations[13].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[13].border}">
 			
 		</div>
-		<div  ng-click = "click(14)" style = "background-color: {{relations[14].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[14].border}">
+		<div  ng-mouseover = "relationshipMouseOver(14)" ng-mouseleave = "mouseLeave()" ng-click = "click(14)" style = "background-color: {{relations[14].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[14].border}">
 			
 		</div>
-		<div  ng-click = "click(15)" style = "background-color: {{relations[15].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[15].border}">
+		<div  ng-mouseover = "relationshipMouseOver(15)" ng-mouseleave = "mouseLeave()" ng-click = "click(15)" style = "background-color: {{relations[15].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[15].border}">
 			
 		</div>
-		<div  ng-click = "click(16)" style = "background-color: {{relations[16].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[16].border}">
+		<div  ng-mouseover = "relationshipMouseOver(16)" ng-mouseleave = "mouseLeave()" ng-click = "click(16)" style = "background-color: {{relations[16].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[16].border}">
 			
 		</div>
-		<div  ng-click = "click(17)" style = "background-color: {{relations[17].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[17].border}">
+		<div  ng-mouseover = "relationshipMouseOver(17)" ng-mouseleave = "mouseLeave()" ng-click = "click(17)" style = "background-color: {{relations[17].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[17].border}">
 			
 		</div>
-		<div  ng-click = "click(18)" style = "background-color: {{relations[18].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[18].border}">
+		<div  ng-mouseover = "relationshipMouseOver(18)" ng-mouseleave = "mouseLeave()" ng-click = "click(18)" style = "background-color: {{relations[18].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[18].border}">
 			
 		</div>
 		<div class = "col-sm-2">
@@ -158,31 +158,31 @@ Below is a graphical display of current relations between the primary actors in 
 
 
 	<div class = "row">
-		<div ng-mouseover = "titleMouseOver(actors[8].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key vertical"><br>
+		<div ng-class = "{boxcallout: actors[8].verticalcallout}"ng-mouseover = "titleMouseOver(actors[8].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key vertical"><br>
 			{{actors[8].header}}
 		</div>
-		<div  ng-click = "click(19)" style = "background-color: {{relations[19].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[19].border}">
+		<div  ng-mouseover = "relationshipMouseOver(19)" ng-mouseleave = "mouseLeave()" ng-click = "click(19)" style = "background-color: {{relations[19].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[19].border}">
 			
 		</div>
-		<div  ng-click = "click(20)" style = "background-color: {{relations[20].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[20].border}">
+		<div  ng-mouseover = "relationshipMouseOver(20)" ng-mouseleave = "mouseLeave()" ng-click = "click(20)" style = "background-color: {{relations[20].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[20].border}">
 			
 		</div>
-		<div  ng-click = "click(21)" style = "background-color: {{relations[21].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[21].border}">
+		<div  ng-mouseover = "relationshipMouseOver(21)" ng-mouseleave = "mouseLeave()" ng-click = "click(21)" style = "background-color: {{relations[21].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[21].border}">
 			
 		</div>
-		<div  ng-click = "click(22)" style = "background-color: {{relations[22].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[22].border}">
+		<div  ng-mouseover = "relationshipMouseOver(22)" ng-mouseleave = "mouseLeave()" ng-click = "click(22)" style = "background-color: {{relations[22].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[22].border}">
 			
 		</div>
-		<div  ng-click = "click(23)" style = "background-color: {{relations[23].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[23].border}">
+		<div  ng-mouseover = "relationshipMouseOver(23)" ng-mouseleave = "mouseLeave()" ng-click = "click(23)" style = "background-color: {{relations[23].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[23].border}">
 			
 		</div>
-		<div  ng-click = "click(24)" style = "background-color: {{relations[24].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[24].border}">
+		<div  ng-mouseover = "relationshipMouseOver(24)" ng-mouseleave = "mouseLeave()" ng-click = "click(24)" style = "background-color: {{relations[24].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[24].border}">
 			
 		</div>
-		<div  ng-click = "click(25)" style = "background-color: {{relations[25].color}}"class = "col-sm-1" ng-class = "{boxborder: relations[25].border}">
+		<div  ng-mouseover = "relationshipMouseOver(25)" ng-mouseleave = "mouseLeave()" ng-click = "click(25)" style = "background-color: {{relations[25].color}}"class = "col-sm-1" ng-class = "{boxborder: relations[25].border}">
 			
 		</div>
-		<div  ng-click = "click(26)" style = "background-color: {{relations[26].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[26].border}">
+		<div  ng-mouseover = "relationshipMouseOver(26)" ng-mouseleave = "mouseLeave()" ng-click = "click(26)" style = "background-color: {{relations[26].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[26].border}">
 			
 		</div>
 		<div class = "col-sm-3">
@@ -190,28 +190,28 @@ Below is a graphical display of current relations between the primary actors in 
 	</div>
 
 	<div class = "row">
-		<div ng-mouseover = "titleMouseOver(actors[7].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key vertical"><br>
+		<div ng-class = "{boxcallout: actors[7].verticalcallout}"ng-mouseover = "titleMouseOver(actors[7].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key vertical"><br>
 			{{actors[7].header}}
 		</div>
-		<div  ng-click = "click(27)" style = "background-color: {{relations[27].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[27].border}">
+		<div  ng-mouseover = "relationshipMouseOver(27)" ng-mouseleave = "mouseLeave()" ng-click = "click(27)" style = "background-color: {{relations[27].color}}" class = "col-sm-1" ng-class = "{boxborder: relations[27].border}">
 			
 		</div>
-		<div  ng-click = "click(28)" style = "background-color: {{relations[28].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[28].border}">
+		<div  ng-mouseover = "relationshipMouseOver(28)" ng-mouseleave = "mouseLeave()" ng-click = "click(28)" style = "background-color: {{relations[28].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[28].border}">
 			
 		</div>
-		<div  ng-click = "click(29)" style = "background-color: {{relations[29].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[29].border}">
+		<div  ng-mouseover = "relationshipMouseOver(29)" ng-mouseleave = "mouseLeave()" ng-click = "click(29)" style = "background-color: {{relations[29].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[29].border}">
 			
 		</div>
-		<div  ng-click = "click(30)" style = "background-color: {{relations[30].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[30].border}">
+		<div  ng-mouseover = "relationshipMouseOver(30)" ng-mouseleave = "mouseLeave()" ng-click = "click(30)" style = "background-color: {{relations[30].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[30].border}">
 			
 		</div>
-		<div  ng-click = "click(31)" style = "background-color: {{relations[31].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[31].border}">
+		<div  ng-mouseover = "relationshipMouseOver(31)" ng-mouseleave = "mouseLeave()" ng-click = "click(31)" style = "background-color: {{relations[31].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[31].border}">
 			
 		</div>
-		<div  ng-click = "click(32)" style = "background-color: {{relations[32].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[32].border}">
+		<div  ng-mouseover = "relationshipMouseOver(32)" ng-mouseleave = "mouseLeave()" ng-click = "click(32)" style = "background-color: {{relations[32].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[32].border}">
 			
 		</div>
-		<div  ng-click = "click(33)" style = "background-color: {{relations[33].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[33].border}">
+		<div  ng-mouseover = "relationshipMouseOver(33)" ng-mouseleave = "mouseLeave()" ng-click = "click(33)" style = "background-color: {{relations[33].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[33].border}">
 			
 		</div>
 		<div class = "col-sm-4">
@@ -219,25 +219,25 @@ Below is a graphical display of current relations between the primary actors in 
 	</div>
 
 	<div class = "row">
-		<div ng-mouseover = "titleMouseOver(actors[6].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key vertical"><br>
+		<div ng-class = "{boxcallout: actors[6].verticalcallout}"ng-mouseover = "titleMouseOver(actors[6].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key vertical"><br>
 			{{actors[6].header}}
 		</div>
-		<div ng-click = "click(34)" style = "background-color: {{relations[34].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[34].border}">
+		<div ng-mouseover = "relationshipMouseOver(34)" ng-mouseleave = "mouseLeave()" ng-click = "click(34)" style = "background-color: {{relations[34].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[34].border}">
 			
 		</div>
-		<div  ng-click = "click(35)" style = "background-color: {{relations[35].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[35].border}">
+		<div  ng-mouseover = "relationshipMouseOver(35)" ng-mouseleave = "mouseLeave()" ng-click = "click(35)" style = "background-color: {{relations[35].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[35].border}">
 			
 		</div>
-		<div ng-click = "click(36)" style = "background-color: {{relations[36].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[36].border}">
+		<div ng-mouseover = "relationshipMouseOver(36)" ng-mouseleave = "mouseLeave()" ng-click = "click(36)" style = "background-color: {{relations[36].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[36].border}">
 			
 		</div>
-		<div ng-click = "click(37)" style = "background-color: {{relations[37].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[37].border}">
+		<div ng-mouseover = "relationshipMouseOver(37)" ng-mouseleave = "mouseLeave()" ng-click = "click(37)" style = "background-color: {{relations[37].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[37].border}">
 			
 		</div>
-		<div ng-click = "click(38)" style = "background-color: {{relations[38].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[38].border}">
+		<div ng-mouseover = "relationshipMouseOver(38)" ng-mouseleave = "mouseLeave()" ng-click = "click(38)" style = "background-color: {{relations[38].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[38].border}">
 			
 		</div>
-		<div ng-click = "click(39)" style = "background-color: {{relations[39].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[39].border}">
+		<div ng-mouseover = "relationshipMouseOver(39)" ng-mouseleave = "mouseLeave()" ng-click = "click(39)" style = "background-color: {{relations[39].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[39].border}">
 			
 		</div>
 			<div class = "col-sm-4" style = "text-align:right">
@@ -248,22 +248,22 @@ Below is a graphical display of current relations between the primary actors in 
 	</div>
 
 	<div class = "row">
-		<div ng-mouseover = "titleMouseOver(actors[5].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key vertical"><br>
+		<div ng-class = "{boxcallout: actors[5].verticalcallout}"ng-mouseover = "titleMouseOver(actors[5].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key vertical"><br>
 			{{actors[5].header}}
 		</div>
-		<div   ng-click = "click(40)" style = "background-color: {{relations[40].color}}"class = "col-sm-1"ng-class = "{boxborder: relations[40].border}">
+		<div  ng-mouseover = "relationshipMouseOver(40)" ng-mouseleave = "mouseLeave()"  ng-click = "click(40)" style = "background-color: {{relations[40].color}}"class = "col-sm-1"ng-class = "{boxborder: relations[40].border}">
 			
 		</div>
-		<div  ng-click = "click(41)" style = "background-color: {{relations[41].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[41].border}">
+		<div ng-mouseover = "relationshipMouseOver(41)" ng-mouseleave = "mouseLeave()"  ng-click = "click(41)" style = "background-color: {{relations[41].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[41].border}">
 			
 		</div>
-		<div  ng-click = "click(42)" style = "background-color: {{relations[42].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[42].border}">
+		<div  ng-mouseover = "relationshipMouseOver(42)" ng-mouseleave = "mouseLeave()" ng-click = "click(42)" style = "background-color: {{relations[42].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[42].border}">
 			
 		</div>
-		<div  ng-click = "click(43)" style = "background-color: {{relations[43].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[43].border}">
+		<div  ng-mouseover = "relationshipMouseOver(43)" ng-mouseleave = "mouseLeave()" ng-click = "click(43)" style = "background-color: {{relations[43].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[43].border}">
 			
 		</div>
-		<div  ng-click = "click(44)" style = "background-color: {{relations[44].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[44].border}">
+		<div  ng-mouseover = "relationshipMouseOver(44)" ng-mouseleave = "mouseLeave()" ng-click = "click(44)" style = "background-color: {{relations[44].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[44].border}">
 		</div>
 		<div class = "col-sm-5" style = "text-align:right">
 		<span ng-mouseover = "mouseOver('#CCFF66')" ng-mouseleave = "mouseLeave()"style = "color: #A3CC52">Political or Rhetorical Support </span>
@@ -273,19 +273,19 @@ Below is a graphical display of current relations between the primary actors in 
 	</div>
 
 	<div class = "row">
-		<div ng-mouseover = "titleMouseOver(actors[4].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key vertical"><br>
+		<div ng-class = "{boxcallout: actors[4].verticalcallout}"ng-mouseover = "titleMouseOver(actors[4].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key vertical"><br>
 			{{actors[4].header}}
 		</div>
-		<div   ng-click = "click(45)" style = "background-color: {{relations[45].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[45].border}">
+		<div ng-mouseover = "relationshipMouseOver(45)" ng-mouseleave = "mouseLeave()"   ng-click = "click(45)" style = "background-color: {{relations[45].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[45].border}">
 			
 		</div>
-		<div   ng-click = "click(46)" style = "background-color: {{relations[46].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[46].border}">
+		<div  ng-mouseover = "relationshipMouseOver(46)" ng-mouseleave = "mouseLeave()"  ng-click = "click(46)" style = "background-color: {{relations[46].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[46].border}">
 			
 		</div>
-		<div  ng-click = "click(47)" style = "background-color: {{relations[47].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[47].border}">
+		<div ng-mouseover = "relationshipMouseOver(47)" ng-mouseleave = "mouseLeave()"  ng-click = "click(47)" style = "background-color: {{relations[47].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[47].border}">
 			
 		</div>
-		<div  ng-click = "click(48)" style = "background-color: {{relations[48].color}}"class = "col-sm-1"ng-class = "{boxborder: relations[48].border}">
+		<div  ng-mouseover = "relationshipMouseOver(48)" ng-mouseleave = "mouseLeave()" ng-click = "click(48)" style = "background-color: {{relations[48].color}}"class = "col-sm-1"ng-class = "{boxborder: relations[48].border}">
 			
 		</div>
 		<div class = "col-sm-6" style = "text-align:right">
@@ -296,16 +296,16 @@ Below is a graphical display of current relations between the primary actors in 
 	</div>
 
 	<div class = "row">
-		<div ng-mouseover = "titleMouseOver(actors[3].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key vertical"><br>
+		<div ng-class = "{boxcallout: actors[3].verticalcallout}"ng-mouseover = "titleMouseOver(actors[3].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key vertical"><br>
 			{{actors[3].header}}
 		</div>
-		<div  ng-click = "click(49)" style = "background-color: {{relations[49].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[49].border}">
+		<div ng-mouseover = "relationshipMouseOver(49)" ng-mouseleave = "mouseLeave()"  ng-click = "click(49)" style = "background-color: {{relations[49].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[49].border}">
 			
 		</div>
-		<div  ng-click = "click(50)" style = "background-color: {{relations[50].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[50].border}">
+		<div ng-mouseover = "relationshipMouseOver(50)" ng-mouseleave = "mouseLeave()"  ng-click = "click(50)" style = "background-color: {{relations[50].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[50].border}">
 			
 		</div>
-		<div  ng-click = "click(51)" style = "background-color: {{relations[51].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[51].border}">
+		<div ng-mouseover = "relationshipMouseOver(51)" ng-mouseleave = "mouseLeave()"  ng-click = "click(51)" style = "background-color: {{relations[51].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[51].border}">
 			
 		</div>
 		<div class = "col-sm-2">
@@ -318,13 +318,13 @@ Below is a graphical display of current relations between the primary actors in 
 	</div>
 
 	<div class = "row">
-		<div ng-mouseover = "titleMouseOver(actors[2].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key vertical"><br>
+		<div ng-class = "{boxcallout: actors[2].verticalcallout}"ng-mouseover = "titleMouseOver(actors[2].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key vertical"><br>
 			{{actors[2].header}}
 		</div>
-		<div  ng-click = "click(52)" style = "background-color: {{relations[52].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[52].border}">
+		<div ng-mouseover = "relationshipMouseOver(52)" ng-mouseleave = "mouseLeave()"  ng-click = "click(52)" style = "background-color: {{relations[52].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[52].border}">
 			
 		</div>
-		<div  ng-click = "click(53)"  style = "background-color: {{relations[53].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[53].border}">
+		<div ng-mouseover = "relationshipMouseOver(53)" ng-mouseleave = "mouseLeave()"  ng-click = "click(53)"  style = "background-color: {{relations[53].color}}" class = "col-sm-1"ng-class = "{boxborder: relations[53].border}">
 			
 		</div>
 		<div class = "col-sm-3">
@@ -337,10 +337,10 @@ Below is a graphical display of current relations between the primary actors in 
 	</div>
 
 	<div class = "row">
-		<div ng-mouseover = "titleMouseOver(actors[1].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key verticalbottom"><br>
+		<div ng-class = "{boxcallout: actors[1].verticalcallout}"ng-mouseover = "titleMouseOver(actors[1].header)" ng-mouseleave = "mouseLeave()"class = "col-sm-1 key verticalbottom"><br>
 			{{actors[1].header}}
 		</div>
-		<div  ng-click = "click(54)" style = "background-color: {{relations[54].color}}"class = "col-sm-1"ng-class = "{boxborder: relations[54].border}">
+		<div ng-mouseover = "relationshipMouseOver(54)" ng-mouseleave = "mouseLeave()"  ng-click = "click(54)" style = "background-color: {{relations[54].color}}"class = "col-sm-1"ng-class = "{boxborder: relations[54].border}">
 			
 		</div>
 		<div class = "col-sm-4">
@@ -402,8 +402,8 @@ Below is a graphical display of current relations between the primary actors in 
 	<br>
 	<br>
 <div class = "menu">
-		<div class = "menuitem"> About Me </div>
-		<div class = "menuitem"> Contact </div>
+		<div class = "menuitem"> ABOUT ME </div>
+		<div class = "menuitem"> CONTACT </div>
 </div>
 
 <div class = "header firstheader">
