@@ -1,0 +1,209 @@
+/*==-=-=-=-=--  TABLE CELL FORMATTING =-=-=-=-=-=-=-*/
+*{-webkit-transition-duration: .5s;
+	transition-duration: .5s;
+}
+.col-sm-1 {
+	font-weight: bold;
+	text-align: center;
+	font-size: 10px;
+	height:70px;
+	display: table-cell;
+	vertical-align: middle;
+}
+.top{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+}
+.left{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	border-left:2px solid black;
+	border-top-left-radius: 10px;
+}
+.right{
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	border-top-right-radius: 10px;
+}
+.vertical{
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+}
+.verticaltop{
+	border:2px solid black;
+	border-top-left-radius: 10px;
+}
+.verticalbottom{
+	border-bottom: 2px solid black;
+	border-right: 2px solid black;
+	border-left: 2px solid black;
+	border-bottom-left-radius: 10px;
+}
+.firstheader{
+	border-top: 5px solid black;
+	background-attachment: scroll;	
+/*	background-image: url('inverted image.jpg');*/
+	background-image: url('https://news-images.vice.com/images/articles/meta/2015/07/04/islamic-state-releases-gruesome-video-of-mass-1436030510.png?crop=1xw:0.9965397923875432xh;0xw,0xh&resize=700:*&output-format=image/jpeg&output-quality=75');
+	font-size: 100px;
+	background-size: cover; 
+}
+.key{
+	text-transform: uppercase;
+	font-weight: 300;
+}
+/*http://islamicvoiceofturkey.com/wp-content/uploads/iraqi-father-shoot-1508x706_c.jpg*/
+
+/*=-=-=-=-=-  HEADER AND MENU FORMATTING -=-=-=-=-=-*/
+.close{float:right;}
+
+.header{
+	
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: left;
+    font-weight: bold;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right:40px;
+    color: #4C4C4C;
+    font-size: 30px;
+    font-weight: 200;
+    border-bottom: 5px solid black;
+}
+.maintitle{
+	font-size: 50px;
+	font-weight: bold;
+	font-family: 'Oswald', sans-serif;
+}
+.maintitlesub{
+	font-size: 18px;
+	font-family: 'Oswald', sans-serif;
+}
+.headerinner{
+	padding: 40px;
+	margin: 75px;
+	margin-bottom:500px;
+/*	background-color: white;*/
+	background-color: rgba(255, 255, 255, .8);
+	/*border-radius: 10px;*/
+	width:30%;
+	border: 4px solid black;
+	text-align: center;
+}
+
+.menu {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    display: inline;
+    text-align: center;
+    background-color: black;
+    font-size: 16px;
+    line-height: 2;
+    display: inline-block;
+
+}
+
+.menuitem{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;	
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.menuitem:hover{
+	background-color: #333333;
+	 -webkit-transition-duration: 0.4s;
+}
+
+.title{
+	text-align: left;
+	font-size: 20px;
+	font-weight: 200;
+	margin-left: 50px;
+	font-family: 'BenchNine', sans-serif;
+}	
+.newsdisplayouter{
+	position: fixed;
+	top:0px;
+	left:0px;
+	background-color: rgba(64, 64, 64, 0.8);
+	height:100%;
+	width: 100%;
+	text-align: center;
+	}
+.newsdisplayinner{
+	background-color: white;
+	width: 50%;
+	height:65%;
+	margin: auto;
+	z-index: 2;
+	margin-top:150px;
+	text-align: left;
+	opacity: 1;
+	padding: 30px;
+	overflow: scroll;
+	font-size: 24px;
+	font-family: 'BenchNine', sans-serif;
+	}
+.story{
+	padding: :20px;
+	font-weight: 200;
+	margin-top: 20px;
+	font-size: 18px;
+	margin-left: 20px;
+}
+.link{
+	text-decoration:none;
+	color: black; 
+}
+.boxborder{
+	opacity: .2;
+	 -webkit-transition-duration: .5s;
+}
+[ng-click],
+[data-ng-click],
+[x-ng-click] {
+    cursor: pointer;
+}
+
+
+.smallscreen{display: none;}
+
+@media screen and (max-width: 850px) {
+    .smallscreen {
+        display:inline-block;
+        position: fixed;
+        top:0
+        left:0;
+        width: 100%;
+        height:100%;
+        color: black;
+        z-index: 4;	
+        background-attachment: scroll;	
+		background-image: url('https://news-images.vice.com/images/articles/meta/2015/07/04/islamic-state-releases-gruesome-video-of-mass-1436030510.png?crop=1xw:0.9965397923875432xh;0xw,0xh&resize=700:*&output-format=image/jpeg&output-quality=75');
+		background-size: cover; 	
+    }
+}
+.smallscreenwarning{
+	font-size: 30px;
+	padding: 20px;
+	width: 40%;
+	margin: auto;
+	margin-top: 50px;
+	background-color: rgba(255, 255, 255, .8);
+	text-align: center;
+	border: 3px solid black;
+}
+}
+
